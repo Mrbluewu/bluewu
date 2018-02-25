@@ -1,0 +1,389 @@
+* {margin: 0;padding: 0;}
+a,p,span,h1,h2,h3,h4,h5,h6,div {transition: 0.6s;}
+a {text-decoration: none;}
+li {list-style: none;}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+body {font-size: 14px;}
+/*---以上代码均为代码初始化---*/
+
+
+/*---下雪插件样式开始---*/
+#Snow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: rgba(125,137,95,0.1);
+    pointer-events: none;
+}
+/*---下雪插件样式结束---*/
+
+@media (max-width: 768px){.nav {width: 95%}}
+@media (max-width: 768px){
+body .welcome {height: 730px;}
+body .welcome .welcome_right {width: 100%;}
+body .welcome .welcome_left {width: 100%;margin-bottom: 4%;}
+body .welcome .welcome_left .box_img {width: 100%;}
+body .welcome .welcome_right .more {width: 100%}
+}
+@media (min-width: 768px){
+.container {width: 750px;}
+.album_i {height: 140px;}
+.nav {width: 768px;}
+}
+@media (min-width: 992px){
+.container {width: 970px;}
+.nav {width: 970px;}
+}
+@media (max-width: 1200px){
+body .welcome .welcome_right .more {width: 26%;}
+}
+@media (min-width: 1200px){
+.container {width: 1170px;}
+.nav {width: 1170px;}
+.album_i {height: 220px;}
+}
+
+
+.banner {
+	width: 100%;
+    min-height: 790px;
+	background: url(../images/banner.jpg)no-repeat center bottom;
+	background-size: cover;
+	color: white;
+}
+.banner.w3about {
+	min-height: 260px;
+}
+header {
+	padding-top: 2em;
+}
+.container {
+	margin: auto;
+	padding: 0 15px;
+}
+nav {
+	background: url(../images/img01.png) no-repeat left;
+    height: 50px;
+    width: 55px;
+    cursor: pointer;
+    background-color: #4362ca;
+    border-radius: 6px;
+    transition: 1s;
+    position: absolute;
+}
+nav ul {
+	padding-left: 50px;
+	float: left;
+	display: none;
+}
+nav ul li {
+	float: left;
+	margin: 0px;
+	height: 50px;
+	width: 100px;
+	transition: 0.6s;
+}
+nav ul li a {
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	transition: 0.6s;
+}
+nav ul li:hover {
+	background-color: #304ba5;
+}
+nav ul li:hover a {
+	animation:a_dd 1s;
+}
+.ul {
+	animation: nav_jy 1s forwards;
+	display: block;
+}
+.banner .b_left {
+	float: left;
+	width: 54%;
+	text-align: right;
+}
+.banner .b_left h1 {
+	color: white;
+	font-size: 3.5em;
+	font-family: 'Dancing Script',cursive;
+	text-shadow: 3px 2px 0 white;
+	text-transform: uppercase;
+}
+.banner .b_left h1 a {
+	color: white;
+}
+.banner .b_right {
+	float: right;
+}
+.banner .b_right a {
+	color: white;
+	display: block;
+	margin: 0 10px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	text-align: center;
+	transition: 1s;
+	font-size: 1.1em;
+}
+.banner .b_right a:hover {
+	color: #09e3ff;
+}
+.banner_nr {
+	margin-top: 15em;
+	width: 100%;
+}
+.banner_nr .ad {
+	overflow: hidden;
+	font-family: 微软雅黑,黑体；
+}
+.banner_nr .ad h1 {
+	width: 65%;
+	margin: auto;
+	font-size: 5em;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 1em;
+    padding-left: 5%;
+}
+.banner_nr .ad p {
+	width: 65%;
+	margin: auto;
+	opacity: 0.7;
+	font-size: 1.1em;
+	line-height: 2em;
+	text-align: center;
+	margin-top: 2em;
+}
+.banner_nr .ad_te {
+	height: 20em;
+    margin-top: 5em;
+}
+.banner_nr .ad_center {
+	height: 20em;
+}
+.banner_nr .ad_same a {
+	width: 50px;
+	height: 50px;
+	border: 1px dashed #fff;
+	top: 10em;
+	transition: 0.6s;
+	position: relative;
+	z-index: 99;
+}
+.banner_nr .ad_same .ad_01 {
+	background: url(../images/img-sprite.png) no-repeat 19px center;
+	float: left;
+}
+.banner_nr .ad_same .ad_02 {
+	background: url(../images/img-sprite.png) no-repeat -10px center;
+	float: right;
+}
+.banner_nr .ad_same a:hover {
+	transform: scale(1.2);
+}
+.welcome {
+	padding: 5em; ;
+    min-height: 380px;
+}
+/*--快捷导航内容代码-开始--*/
+
+#QcNav .QcNav{
+	width: 65%;
+}
+#QcNav .QcNav .QcNav_nav {
+	display: block;
+	width: 160px;
+	height: 60px;
+	line-height: 60px;
+	background: #4362ca; 
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	font-family:'微软雅黑';
+	border-radius: 25px;
+	float: left;
+	font-weight: 500;
+	margin: 5px 0% 25px 1%;
+	transition: 0.2s;
+}
+#QcNav .QcNav .QcNav_nav:hover {
+	background: #304ba5;
+	font-size: 1.8em;
+
+}
+/*--快捷导航内容代码-结束--*/
+.welcome .welcome_left {
+	width: 46%;
+	float: right;
+}
+.welcome .welcome_right {
+	width: 54%;
+	float: left;
+}
+.welcome .welcome_left .box_img {
+	width: 90%;
+	margin-top: 1em;
+	overflow: hidden;
+}
+.welcome .welcome_left .box_img img {
+	width: 100%;
+	transform: scale(1.2);
+	transition: 0.6s;
+}
+.welcome .welcome_left .box_img img:hover {
+	transform: scale(1.0);
+}
+.welcome .welcome_right h3 {
+	color: #05c0d8;
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	text-transform: capitalize;
+	font-family: 'Dancing Script', cursive;
+}
+.welcome .welcome_right h5 {
+    color: #333;
+    font-size: 1em;
+    margin: 0 0 1em;
+    line-height: 1.8em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.welcome .welcome_right p {
+    font-size: 1em;
+    color: #999;
+    line-height: 1.8em;
+}
+.welcome .welcome_right .more {
+	width: 20%;
+	float: left;
+	border: 1px solid #4362ca;
+	text-align: center;
+}
+.welcome .welcome_right a {
+	color: #4362ca;
+	letter-spacing: 1px;
+	font-size: 1em;
+	transition: 0.6s;
+	display: block;
+	padding: 0.7em 1.9em;
+	transform: rotateY(0deg);
+}
+.welcome .welcome_right .more:hover {
+	border-color: #05c0d8;
+}
+.welcome .welcome_right .more:hover a {
+	background-color: #05c0d8;
+	animation: gdyd 1s alternate ease-in-out forwards;
+}
+
+
+.album,.about {
+	width: 100%;
+	min-height: 900px;
+	padding-top: 5%;
+}
+.album_i img {
+	width: 100%;
+	transition: 0.6s;
+	transform: scale(1.5);
+
+}
+.album_i:hover img {
+	opacity: 0.4;
+	animation: fz 1s;
+    position: relative;
+    top: -34px;
+}
+.album_i {
+ 	width: 30%;
+ 	margin-left: 2%;
+ 	margin-bottom: 5%;
+ 	float: left;
+ 	overflow: hidden;
+ 	text-align: center;
+ 	border: 3px solid white;
+ 	background: black;
+ 	box-shadow: 5px 5px 30px #666;
+}
+.album_i span {
+	position: relative;
+	top: 40%;
+	z-index: -1;
+	font-size: 1.8em;
+	display: block;
+	width: 20%;
+	opacity: 0;
+	color: white;
+	display: none;
+}
+.album_i:hover span {
+	z-index: 0;
+	opacity: 1;
+	display: block;
+}
+.timex {
+	width: 70%;
+	min-height: 800px;
+	float: right;
+	border-left: 1px solid black;
+}
+.timex .time {
+	width: 2em;
+	height: 2em;
+	background-color:black;
+	border-radius: 50px;
+	float: left;
+	left: -1em;
+	position: relative;
+	transition: 0.6s;
+}
+body .about .times {
+	animation: dx 1s infinite ease;
+}
+body .about .wzs {
+	opacity: 1;
+	width: 70%;
+}
+.timex .te01:hover .wzz01 {
+	display: block;
+}
+.timex .wz {
+	float: left;
+	width: 30%;
+	height: 100px;
+	padding: 10px;
+	background: rgba(62, 62, 229, 0.8);
+	text-align: center;
+	line-height: 100px;
+	color: white;
+	font-size: 14px;
+	border-radius: 100px;
+	opacity: 0.3;
+	display: block;
+}
+.kuai {
+	float: left;
+	width: 100%;
+    margin-bottom: 6em;
+}
+.time {
+    top: 3.5em;
+}
+footer {
+	padding: 4em;
+    min-height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
